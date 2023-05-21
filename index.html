@@ -4,7 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="reset.css">
+	<link href='https://unpkg.com/css.gg@2.0.0/icons/css/danger.css' rel='stylesheet'>
 	<link rel="stylesheet" href="style.css">
+
 	<title>Encriptador de texto - Alura</title>
 </head>
 <body>
@@ -18,9 +20,10 @@
 		<div class="container">
 			<div class="row">
 				<!--Seccion de entrada de texto-->
-				<div class="div-texto-entrada">
-					<label class="label-text" for="in-text">Texto a encriptar</label>
-					<textarea class="in-text" name="in-text" id="in-text" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+				<div class="col-6 col-s-9 div-texto-entrada">
+					
+					<label class="label-text" for="in-text"><i class="gg-danger"></i>Puede ingresar mayusculas y acentos.</label>
+					<textarea class="in-text" name="in-text" id="in-text" cols="30" rows="60" placeholder="Ingrese el texto aqui"></textarea>
 
 					<div class="div-boton">
 						<button class="boton-encrip">Encriptar</button>
@@ -29,7 +32,9 @@
 				</div>
 
 				<!--Seccion de salida de texto-->
-				<div class="div-texto-salida">
+				<div class="col-6 col-s-9 div-texto-salida">
+					<label for="out-text"></label>
+					<textarea class="out-text" name="out-text" id="out-text" cols="30" rows="28" readonly></textarea>
 				</div>
 			</div>
 		</div>
