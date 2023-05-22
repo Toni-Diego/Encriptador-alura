@@ -25,6 +25,19 @@ function encriptTexto(value){
 	return salida;
 }
 
+function copiar(){
+    var text = document.getElementById('out-mensaje').value;
+ 
+    navigator.clipboard.writeText(text)
+    .then(() => {
+        console.log('Text copied to clipboard');
+        document.getElementById('in-text').value= "";
+    })
+    .catch(err => {
+        console.error('Error in copying text: ', err);
+    });
+}
+
 function ocultarOutImg(){
 	var texto = document.getElementById('in-text').value;
 	var textoAcentos = removeAccents(texto);
@@ -33,15 +46,18 @@ function ocultarOutImg(){
 	document.getElementById('t2').style.display = 'none';
 	document.getElementById('p1').style.display = 'none';
 	document.getElementById('out-mensaje').style.display = 'block';
-	document.getElementById('boton3').style.display = 'block';
+	document.getElementById('boton3').style.display = 'inline-block';
+	document.getElementById('boton4').style.display = 'inline-block';
 	var area = document.getElementById('out-mensaje');
 	area.value = encriptTexto(texto);
 }
 
 function ocultarOutText(){
+	document.getElementById('out-mensaje').value= "";
 	document.getElementById('img1').style.display = '';
 	document.getElementById('t2').style.display = '';
 	document.getElementById('p1').style.display = '';
 	document.getElementById('out-mensaje').style.display = 'none';
 	document.getElementById('boton3').style.display = 'none';
+	document.getElementById('boton4').style.display = 'none';
 }

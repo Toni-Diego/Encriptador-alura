@@ -153,11 +153,13 @@ main{
 	height: 90%;
 	margin: 5px 18px;
 	border-radius: 15px;
-	border-color: #0A3871;
-	box-shadow: 0;
+	border: none;
+	text-decoration: none;
 	background-color: #0A3871;
 	color: white;
 	font-weight: bold;
+	-webkit-transition: 0.25s;
+	transition: 0.25s;
 }
 
 .boton-desencrip{
@@ -165,10 +167,12 @@ main{
 	height: 90%;
 	margin: 5px 18px;
 	border-radius: 15px;
-	border-color: #D8DFE8;
-	box-shadow: 0;
+	border: none;
+	text-decoration: none;
 	background-color: #D8DFE8;
 	font-weight: bold;
+	-webkit-transition: 0.25s;
+	transition: 0.25s;
 }
 
 .div-texto-salida{
@@ -209,18 +213,55 @@ main{
 	margin: 0 0 0 2%;
 	border-color: white;
 	color: black;
+	resize: none;
 }
 
 #boton3{
-	width: 45%;
+	width: 35%;
 	height: 12%;
-	margin: 5% 0 0 27%;
+	margin: 0 0 0 5%;
 	border-radius: 15px;
-	border-color: #D8DFE8;
-	box-shadow: 0;
+	border: none;
+	text-decoration: none;
+	background-color: #0A3871;
+	font-weight: bold;
+	color: white;
+	display: none;
+	-webkit-transition: 0.25s;
+	transition: 0.25s;
+}
+
+#boton4{
+	width: 35%;
+	height: 12%;
+	margin: 5% 0 0 5%;
+	border-radius: 15px;
+	border: none;
+	text-decoration: none;
 	background-color: #D8DFE8;
 	font-weight: bold;
 	display: none;
+	-webkit-transition: 0.25s;
+	transition: 0.25s;
+}
+
+.boton-encrip:hover,.boton-encrip:focus,
+.boton-desencrip:hover,.boton-desencrip:focus,
+#boton4:hover,#boton4:focus,
+#boton3:hover,#boton3:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+button:hover, button:focus {
+  border-color: var(--hover);
+}
+
+.boton-encrip,.boton-desencrip,
+#boton3,#boton4 {
+  --color: #ffa260;
+  --hover: #0A3871;
 }
 
 footer{
