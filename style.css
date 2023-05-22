@@ -141,6 +141,12 @@ main{
 	margin: 10px auto;
 	box-shadow: 0 0 5px 1px #DADADA;
 	border-color: #ffffff;
+	resize: none;
+}
+
+textarea:focus {
+    border-color: #ffffff;
+    outline: 0 none;
 }
 
 .div-boton{
