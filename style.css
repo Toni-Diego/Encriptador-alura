@@ -202,6 +202,26 @@ main{
 	margin: 4% 0;
 }
 
+#out-mensaje{
+	width: 95%;
+	height: 80%;
+	display: none;
+	margin: 0 0 0 2%;
+	border-color: white;
+}
+
+#boton3{
+	width: 45%;
+	height: 12%;
+	margin: 5% 0 0 27%;
+	border-radius: 15px;
+	border-color: #D8DFE8;
+	box-shadow: 0;
+	background-color: #D8DFE8;
+	font-weight: bold;
+	display: none;
+}
+
 footer{
 	position: fixed;
 	bottom: 0;
@@ -217,10 +237,10 @@ footer{
 		margin-left: 5%;
 	}
 
-	.in-text, .out-text{
+	.in-text, .div-text{
 		box-sizing: border-box;
 		max-width: 90%;
-		max-height: 60%;
+		max-height: 75%;
 	}
 
 	.boton-encrip{

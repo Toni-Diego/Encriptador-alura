@@ -24,12 +24,12 @@
 			<div class="row">
 				<!--Seccion de entrada de texto-->
 				<div class="col-6 col-s-9 div-texto-entrada">
-					
+					<script src="script.js"></script>
 					<label class="label-text" for="in-text"><i class="gg-danger"></i>Puede ingresar mayusculas y acentos.</label>
 					<textarea class="in-text" name="in-text" id="in-text" cols="30" rows="60" placeholder="Ingrese el texto aqui"></textarea>
 
 					<div class="div-boton">
-						<button class="boton-encrip">Encriptar</button>
+						<button id="boton1" type="button" class="boton-encrip" onclick="ocultarOutImg()">Encriptar</button>
 						<button class="boton-desencrip">Desencriptar</button>
 					</div>
 				</div>
@@ -37,9 +37,11 @@
 				<!--Seccion de salida de texto-->
 				<div class="col-6 col-s-9 div-texto-salida">
 					<div class="div-text">
-						<img class="img-out-text" src="image/Muneco.png" alt="No hay texto">
-						<h2>Ningun mensaje fue encontrado</h2>
-						<p>Ingrese el texto que desees encriptar o desencriptar.</p>
+						<img id="img1" class="img-out-text" src="image/Muneco.png" alt="No hay texto">
+						<h2 id="t2">Ningun mensaje fue encontrado</h2>
+						<p id="p1">Ingrese el texto que desees encriptar o desencriptar.</p>
+						<textarea name="out-mensaje" id="out-mensaje" cols="30" rows="10" readonly></textarea>
+						<button id="boton3" type="button" onclick="ocultarOutText()">Copiar</button>
 					</div>
 				</div>
 			</div>
