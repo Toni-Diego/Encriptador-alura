@@ -6,6 +6,9 @@
 	<link rel="stylesheet" href="reset.css">
 	<link href='https://unpkg.com/css.gg@2.0.0/icons/css/danger.css' rel='stylesheet'>
 	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
 	<title>Encriptador de texto - Alura</title>
 </head>
@@ -27,14 +30,17 @@
 
 					<div class="div-boton">
 						<button class="boton-encrip">Encriptar</button>
-						<button class="boton-encrip">Desencriptar</button>
+						<button class="boton-desencrip">Desencriptar</button>
 					</div>
 				</div>
 
 				<!--Seccion de salida de texto-->
 				<div class="col-6 col-s-9 div-texto-salida">
-					<label for="out-text"></label>
-					<textarea class="out-text" name="out-text" id="out-text" cols="30" rows="28" readonly></textarea>
+					<div class="div-text">
+						<img class="img-out-text" src="image/Muneco.png" alt="No hay texto">
+						<h2>Ningun mensaje fue encontrado</h2>
+						<p>Ingrese el texto que desees encriptar o desencriptar.</p>
+					</div>
 				</div>
 			</div>
 		</div>

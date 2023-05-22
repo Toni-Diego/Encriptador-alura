@@ -1,3 +1,7 @@
+html{
+	font-family: 'Montserrat', sans-serif;
+}
+
 header{
 	height:10%;
 	width: 100%;
@@ -91,7 +95,9 @@ main{
 .label-text{
 	text-align: left;
 	display: block;
-	font-size: clamp(0.9rem, 1.5vw, 2rem);;
+	font-size: clamp(0.9rem, 1.5vw, 2rem);
+	color: #0A3871;
+	font-weight: bold;
 }
 /* --------------------- */
 .gg-danger {
@@ -133,6 +139,8 @@ main{
 	height: 75%;
 	border-radius: 10px;
 	margin: 10px auto;
+	box-shadow: 0 0 5px 1px #DADADA;
+	border-color: #ffffff;
 }
 
 .div-boton{
@@ -145,6 +153,22 @@ main{
 	height: 90%;
 	margin: 5px 18px;
 	border-radius: 15px;
+	border-color: #0A3871;
+	box-shadow: 0;
+	background-color: #0A3871;
+	color: white;
+	font-weight: bold;
+}
+
+.boton-desencrip{
+	width: 35%;
+	height: 90%;
+	margin: 5px 18px;
+	border-radius: 15px;
+	border-color: #D8DFE8;
+	box-shadow: 0;
+	background-color: #D8DFE8;
+	font-weight: bold;
 }
 
 .div-texto-salida{
@@ -154,11 +178,28 @@ main{
 	display: inline-block;
 }
 
-.out-text{
+.div-text{
 	display: block;
 	width: 90%;
+	height: 90%;
 	border-radius: 10px;
-	margin: 10px auto;
+	margin: 2px auto;
+	box-shadow: 0 0 5px 1px #DADADA;
+	/*border: solid;
+	border-color: #000000; */
+	text-align: center;
+}
+
+.img-out-text{
+	height: 50%;
+	width: 50%;
+	margin: 10% 0 0 0;
+}
+
+.div-text h2{
+	font-size: clamp(0.9rem, 1.5vw, 2rem);;
+	font-weight: bold;
+	margin: 4% 0;
 }
 
 footer{
