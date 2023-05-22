@@ -17,7 +17,43 @@ header{
 }
 .imagen-logo{
 	height: 48px;
+	display: inline-block;
+	margin: 0 3% 0 8%;
 }
+
+/*----------------------*/
+.wrapper {
+  height: 2vh;
+  /*This part is important for centering*/
+  display: inline-block;
+  place-items: center;
+  margin: 0 0 0 20%;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: clamp(1.1rem, 2vw, 2rem);/*2em;*/
+  font-weight: bold;
+  color: #0A3871;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+/*----------------------*/
 
 main{
 	height: 80%;
@@ -95,7 +131,7 @@ main{
 .label-text{
 	text-align: left;
 	display: block;
-	font-size: clamp(0.9rem, 1.5vw, 2rem);
+	font-size: clamp(1rem, 1.5vw, 2rem);
 	color: #0A3871;
 	font-weight: bold;
 }
@@ -279,6 +315,10 @@ footer{
 }
 
 @media(max-width: 500px){
+
+	.wrapper{
+		margin: 0;
+	}
 	.div-texto-entrada,.div-texto-salida{
 		width: 80%;
 		float: none;
