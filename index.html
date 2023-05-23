@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="src/reset.css">
+	<link rel="stylesheet" href="css/reset.css">
 	<link href='https://unpkg.com/css.gg@2.0.0/icons/css/danger.css' rel='stylesheet'>
-	<link rel="stylesheet" href="src/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 	<header>
 		<div class="contenedor-header">
 			<h1>
-				<img class="imagen-logo" src="src/image/Logo_2.png" alt="Logo de encriptador"> 
+				<img class="imagen-logo" src="img/Logo_2.png" alt="Logo de encriptador"> 
 				<div class="wrapper">
 					<div class="typing-demo">
 						Encriptador de texto.
@@ -32,7 +32,7 @@
 			<div class="row">
 				<!--Seccion de entrada de texto-->
 				<div class="col-6 col-s-9 div-texto-entrada">
-					<script src="src/script.js"></script>
+					<script src="js/script.js"></script>
 					<label class="label-text" for="in-text"><i class="gg-danger"></i>Puede ingresar mayusculas y acentos.</label>
 					<textarea class="in-text" name="in-text" id="in-text" cols="30" rows="60" placeholder="Ingrese el texto aqui"></textarea>
 
@@ -45,7 +45,7 @@
 				<!--Seccion de salida de texto-->
 				<div class="col-6 col-s-9 div-texto-salida">
 					<div class="div-text">
-						<img id="img1" class="img-out-text" src="src/image/Muneco.png" alt="No hay texto">
+						<img id="img1" class="img-out-text" src="img/Muneco.png" alt="No hay texto">
 						<h2 id="t2">Ningun mensaje fue encontrado</h2>
 						<p id="p1">Ingrese el texto que desees encriptar o desencriptar.</p>
 						<textarea name="out-mensaje" id="out-mensaje" cols="30" rows="10" readonly></textarea>
